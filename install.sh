@@ -11,7 +11,7 @@ sudo xbps-install -S cinnamon nemo gnome-screenshot gnome-terminal vim gedit git
 sudo xbps-install -S NetworkManager
 
 #Audio/bluetooth
-sudo xbps-install -S pipewire wireplumber pavucontrol pulsemixer libspa-bluetooth blueman bluez-cups
+sudo xbps-install -S pipewire wireplumber pavucontrol pulsemixer libspa-bluetooth blueman bluez bluez-cups
 
 #enable services
 sudo ln -s /etc/sv/dbus /var/service/
