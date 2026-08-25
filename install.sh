@@ -21,6 +21,7 @@ echo "alias xre='sudo xbps-remove -R'" >> $HOME/.bashrc
 echo "alias xup='sudo xbps-install -Syu'" >> $HOME/.bashrc
 echo "alias fp='patch -p1 <'" >> $HOME/.bashrc
 echo "alias fpr='patch -p1 -R <'" >> $HOME/.bashrc
+echo "alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'" >> $HOME/.bashrc
 
 #using NetworkManager instead dhcpd and wpa_supplicant
 sudo rm -rf /var/service/dhcpcd
