@@ -36,9 +36,6 @@ sudo ln -s /etc/sv/bluetoothd /var/service/
 sudo mkdir -p /etc/pipewire/pipewire.conf.d
 sudo ln -s /usr/share/examples/wireplumber/10-wireplumber.conf /etc/pipewire/pipewire.conf.d/
 
-#set wallpaper 
-gsettings set org.cinnamon.desktop.background picture-uri "file://$HOME/void_cinnamon/wallpaper.jpg"
-
 echo "run: sudo reboot"
 sudo ln -s /usr/share/examples/pipewire/20-pipewire-pulse.conf /etc/pipewire/pipewire.conf.d/
 sudo ln -s /usr/share/applications/pipewire.desktop /etc/xdg/autostart/
