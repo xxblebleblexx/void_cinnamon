@@ -2,10 +2,10 @@
 sudo xbps-install -u xbps
 
 #install WM depencies
-sudo xbps-install -S xorg dbus lightdm mesa intel-video-accel linux7.2 linux7.2-headers sassc patch mesa-vulkan-intel
+sudo xbps-install -S xorg dbus lightdm mesa intel-video-accel linux7.2 linux7.2-headers sassc patch
 
 #install cinnamon DE and cinnamon application 
-sudo xbps-install -S cinnamon nemo gnome-screenshot gnome-terminal vim gedit git wget papirus-icon-theme firefox power-profiles-daemon pfetch cronie rsv engrampa unzip
+sudo xbps-install -S xfce4 nemo gnome-screenshot gnome-terminal vim gedit git wget papirus-icon-theme firefox pfetch cronie rsv engrampa unzip
 
 #Network
 sudo xbps-install -S NetworkManager
