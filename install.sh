@@ -34,6 +34,8 @@ sudo ln -s /etc/sv/lightdm /var/service/
 sudo ln -s /etc/sv/NetworkManager /var/service/
 sudo ln -s /etc/sv/power-profiles-daemon /var/service/
 sudo ln -s /etc/sv/bluetoothd /var/service/
+sudo ln -s /etc/sv/polkitd /var/service/
+sudo ln -s /etc/sv/acpid /var/service/
 sudo mkdir -p /etc/pipewire/pipewire.conf.d
 sudo ln -s /usr/share/examples/wireplumber/10-wireplumber.conf /etc/pipewire/pipewire.conf.d/
 
