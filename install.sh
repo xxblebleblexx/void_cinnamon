@@ -5,7 +5,7 @@ sudo xbps-install -u xbps
 sudo xbps-install -S xorg elogind dbus lightdm mesa linux7.2 linux7.2-headers sassc patch
 
 #install cinnamon DE and cinnamon application 
-sudo xbps-install -S cinnamon nemo gnome-screenshot gnome-terminal vim gedit git wget papirus-icon-theme firefox power-profiles-daemon pfetch cronie rsv engrampa unzip
+sudo xbps-install -S cinnamon nemo gnome-screenshot gnome-terminal vim gedit git wget papirus-icon-theme firefox power-profiles-daemon pfetch cronie rsv engrampa unzip xdg-user-dirs
 
 #Network
 sudo xbps-install -S NetworkManager
@@ -38,9 +38,7 @@ sudo ln -s /etc/sv/polkitd /var/service/
 sudo ln -s /etc/sv/acpid /var/service/
 sudo mkdir -p /etc/pipewire/pipewire.conf.d
 sudo ln -s /usr/share/examples/wireplumber/10-wireplumber.conf /etc/pipewire/pipewire.conf.d/
-
-#set wallpaper 
-gsettings set org.cinnamon.desktop.background picture-uri "file://$HOME/void_cinnamon/wallpaper.jpg"
+xdg-user-dirs-update
 
 echo "run: sudo reboot"
 sudo ln -s /usr/share/examples/pipewire/20-pipewire-pulse.conf /etc/pipewire/pipewire.conf.d/
