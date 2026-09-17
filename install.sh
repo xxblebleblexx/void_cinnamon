@@ -2,7 +2,7 @@
 sudo xbps-install -u xbps
 
 #install WM depencies
-sudo xbps-install -S xorg elogind dbus lightdm mesa linux7.2 linux7.2-headers sassc patch
+sudo xbps-install -S xorg elogind dbus lightdm mesa sassc patch
 
 #install cinnamon DE and cinnamon application 
 sudo xbps-install -S cinnamon nemo gnome-screenshot gnome-terminal vim gedit git wget papirus-icon-theme firefox power-profiles-daemon pfetch cronie rsv engrampa unzip xdg-user-dirs
