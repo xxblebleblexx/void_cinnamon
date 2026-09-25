@@ -2,16 +2,16 @@
 sudo xbps-install -u xbps
 
 #install WM depencies
-sudo xbps-install -S xorg elogind dbus lightdm mesa sassc patch
+sudo xbps-install -Sy xorg elogind dbus lightdm mesa mesa-dri sassc patch
 
 #install cinnamon DE and cinnamon application 
-sudo xbps-install -S cinnamon nemo gnome-screenshot gnome-terminal vim gedit git wget papirus-icon-theme firefox power-profiles-daemon pfetch cronie rsv engrampa unzip xdg-user-dirs
+sudo xbps-install -Sy cinnamon nemo gnome-screenshot gnome-terminal vim gedit git wget papirus-icon-theme firefox power-profiles-daemon pfetch cronie rsv engrampa unzip xdg-user-dirs
 
 #Network
-sudo xbps-install -S NetworkManager
+sudo xbps-install -Sy NetworkManager
 
 #Audio/bluetooth
-sudo xbps-install -S pipewire wireplumber pavucontrol pulsemixer libspa-bluetooth blueman bluez bluez-cups
+sudo xbps-install -Sy pipewire wireplumber pavucontrol pulsemixer libspa-bluetooth blueman bluez bluez-cups
 
 #bashrc conf
 echo "PS1='\[\e[36m\]\W \[\e[35m\]❯❯ \[\e[0m\]'" >> $HOME/.bashrc
