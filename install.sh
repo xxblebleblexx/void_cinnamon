@@ -42,4 +42,7 @@ xdg-user-dirs-update
 sudo ln -s /usr/share/examples/pipewire/20-pipewire-pulse.conf /etc/pipewire/pipewire.conf.d/
 sudo ln -s /usr/share/applications/pipewire.desktop /etc/xdg/autostart/
 
+#conf
+sudo sh -c 'echo "tc qdisc replace dev wlp3s0 root cake bandwidth 50mbit besteffort nat wash" > /etc/rc.local'
+
 sudo reboot
