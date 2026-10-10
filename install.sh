@@ -41,7 +41,7 @@ sudo ln -s /usr/share/examples/wireplumber/10-wireplumber.conf /etc/pipewire/pip
 xdg-user-dirs-update
 sudo ln -s /usr/share/examples/pipewire/20-pipewire-pulse.conf /etc/pipewire/pipewire.conf.d/
 sudo ln -s /usr/share/applications/pipewire.desktop /etc/xdg/autostart/
-sudo echo "CLUTTER_VBLANK=none" >> /etc/environment
+echo "CLUTTER_VBLANK=none" | sudo tee -a /etc/environment
 
 #theme
 git clone -b master --depth=1 https://github.com/vinceliuice/Orchis-theme.git
