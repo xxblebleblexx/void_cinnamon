@@ -2,7 +2,7 @@
 sudo xbps-install -u xbps
 
 #install WM depencies
-sudo xbps-install -Sy xorg elogind dbus lightdm mesa mesa-dri mesa-vaapi mesa-vulkan-intel sassc patch
+sudo xbps-install -Sy xorg-minimal dbus lightdm mesa mesa-dri mesa-vaapi mesa-vulkan-intel sassc patch
 
 #install cinnamon DE and cinnamon application 
 sudo xbps-install -Sy cinnamon nemo gnome-screenshot gnome-terminal vim gedit git wget papirus-icon-theme firefox power-profiles-daemon pfetch rsv engrampa unzip xdg-user-dirs
@@ -28,13 +28,11 @@ sudo rm -rf /var/service/dhcpcd
 sudo rm -rf /var/service/wpa_supplicant
 
 #enable services
-sudo ln -s /etc/sv/elogind /var/service/
 sudo ln -s /etc/sv/dbus /var/service/
 sudo ln -s /etc/sv/lightdm /var/service/
 sudo ln -s /etc/sv/NetworkManager /var/service/
 sudo ln -s /etc/sv/power-profiles-daemon /var/service/
 sudo ln -s /etc/sv/bluetoothd /var/service/
-sudo ln -s /etc/sv/polkitd /var/service/
 sudo ln -s /etc/sv/acpid /var/service/
 sudo mkdir -p /etc/pipewire/pipewire.conf.d
 sudo ln -s /usr/share/examples/wireplumber/10-wireplumber.conf /etc/pipewire/pipewire.conf.d/
