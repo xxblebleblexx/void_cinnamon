@@ -10,6 +10,9 @@ sudo xbps-install -Sy cinnamon nemo gnome-screenshot gnome-terminal vim gedit gi
 #Network
 sudo xbps-install -Sy NetworkManager
 
+#Font
+sudo xbps-install -Sy noto-fonts-ttf dejavu-fonts-ttf liberation-fonts-ttf
+
 #Audio/bluetooth
 sudo xbps-install -Sy pipewire wireplumber pavucontrol pulsemixer libspa-bluetooth blueman bluez bluez-cups
 
